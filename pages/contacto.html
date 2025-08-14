@@ -1,0 +1,56 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto — Estudio TS</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Estudio TS</h1>
+      <nav class="main-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="about.html">Sobre</a>
+        <a href="../pages/recursos.html">Recursos</a>
+       <div class="dropdown">
+    <button class="dropbtn">Materias ▼</button>
+    <div class="dropdown-content">
+      <a href="materia1.html">Legislación Social</a>
+      <a href="materia2.html">Intervención Comunitaria</a>
+      <a href="materia3.html">Ética Profesional</a>
+      <a href="materia4.html">Investigación Social</a>
+    </div>
+        <a href="../pages/contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contacto</h2>
+    <p>¿Dudas o sugerencias? Escríbenos.</p>
+
+    <form class="contact-form" action="#" method="post" onsubmit="alert('Formulario simulado — este botón no envía datos'); return false;">
+      <label>Nombre
+        <input type="text" name="nombre" required>
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Mensaje
+        <textarea name="mensaje" rows="5" required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Estudio TS</p>
+    </div>
+  </footer>
+</body>
+</html>
