@@ -14,7 +14,7 @@ body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;line-height:1.5;color
 .hero{padding:40px 0;text-align:center}
 .hero h2{font-size:1.6rem;margin-bottom:8px}
 .hero p{max-width:720px;margin:0 auto 16px}
-.cta-row{display:flex;gap:12px;justify-content:center}
+.cta-row{display:flex;gap:12px;justify-content:center;margin-top: 10px;}
 .btn{background:#2b6cb0;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
 .btn.ghost{background:transparent;border:2px solid #2b6cb0;color:#2b6cb0}
 
@@ -113,4 +113,47 @@ body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;line-height:1.5;color
 }
 .dropdown:hover .dropbtn {
   text-decoration: underline;
+}
+.coso{
+  margin-top: 100px;
+}
+.scrollspy-example-2 {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+}
+.barra{
+  margin-top: 50px;
+}
+
+.carouses {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 400%; /* 4 imágenes */
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+.carousel-imagen{
+  height: 500px;
+}
+.menu{
+  position: absolute;
+  z-index: 1050;
+}
+.titulo{
+  text-align: center;
+  margin-top: 30px;
 }
