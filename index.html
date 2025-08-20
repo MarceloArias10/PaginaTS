@@ -4,6 +4,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Página de Estudio — Trabajadores Sociales</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
   <header class="site-header">
@@ -13,13 +17,18 @@
         <a href="index.html">Inicio</a>
         <a href="./pages/about.html">Sobre</a>
         <a href="./pages/recursos.html">Recursos</a>
-        <div class="dropdown">
-    <button class="dropbtn"><a href="materia.html">Materias</a> ▼</button>
-    <div class="dropdown-content">
-      <a href="materia1.html">Legislación Social</a>
-      <a href="materia2.html">Intervención Comunitaria</a>
-      <a href="materia3.html">Ética Profesional</a>
-      <a href="materia4.html">Investigación Social</a>
+        <div class="dropdown" data-bs-auto-close="outside">
+    <button class="dropbtn"><a href="../pages/Materias.html">Materias</a> ▼</button>
+    <div class="dropdown-content menu" >
+      <a href="./pages/Materias.html#derecho">Derecho</a>
+      <a href="./pages/materia2.html">Sociologia</a>
+      <a href="./pages/materia3.html">Practicas Profesionales</a>
+      <a href="materia4.html">Trabajo social</a>
+      <a href="materia4.html">EDI</a>
+      <a href="materia4.html">Metodologia De La Investigacion</a>
+      <a href="materia4.html">Historia</a>
+      <a href="materia4.html">Salud</a>
+      <a href="materia4.html">Formacion Religiosa</a>
     </div>
         <a href="./pages/contacto.html">Contacto</a>
       </nav>
@@ -30,10 +39,29 @@
     <section class="hero">
       <h2>Material de estudio y herramientas para trabajadores sociales</h2>
       <p>Organiza tu plan de estudio, accede a lecturas clave y practica con casos reales.</p>
-      <div class="cta-row">
-        <a class="btn" href="./pages/recursos.html">Ver recursos</a>
-        <a class="btn ghost" href="./pages/ejercicios.html">Hacer ejercicios</a>
-      </div>
+    </section>
+    <section class="carousel">
+      <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="./imagenes/foto1.jpg" class="d-block w-100 carousel-imagen " alt="Slide 1">
+    </div>
+    <div class="carousel-item active">
+      <img src="./imagenes/foto2.jpg" class="d-block w-100  carousel-imagen" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="./imagenes/foto3.jpg" class="d-block w-100 carousel-imagen" alt="Slide 3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
     </section>
 
     <section class="grid-3">
@@ -55,7 +83,22 @@
         <a href="./pages/ejercicios.html" class="link">Resolver ahora</a>
       </article>
     </section>
-
+<section class="coso">
+  <div class="d-flex align-items-start">
+  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+    <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+    <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aperiam accusantium facere minus totam, id cumque sequi ea harum necessitatibus animi inventore, sunt iste dicta libero consectetur ab eligendi repudiandae.</div>
+    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ducimus veniam optio porro impedit amet odio aliquam officia non nobis quisquam soluta repudiandae, earum nulla.</div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, dolores blanditiis labore praesentium sunt aperiam adipisci voluptatem minus tempore voluptatibus, aspernatur illum temporibus! Rem, quidem? Reiciendis ex explicabo perferendis nobis.</div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur voluptates inventore adipisci quaerat asperiores ab blanditiis excepturi sunt, assumenda est ad voluptatum, iste provident?</div>
+  </div>
+</div>
+</section>
     <section class="updates">
       <h3>Últimas novedades</h3>
       <ul>
