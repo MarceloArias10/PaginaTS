@@ -1,3 +1,4 @@
+sass scss/styles.scss styles.css
 /* Reset básico */
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
@@ -274,3 +275,4 @@ footer {
 .barra{
   margin-bottom: 100px;
 }
+

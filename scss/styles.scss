@@ -1,0 +1,435 @@
+// =======================
+// Variables
+// =======================
+$primary-color: #2b6cb0;
+$secondary-color: #2980b9;
+$accent-color: #27ae60;
+$light-bg: #f7f8fb;
+$alt-bg: #f4f6f9;
+$text-color: #222;
+$muted-color: #555;
+$font-stack: "Segoe UI", Arial, Helvetica, sans-serif;
+
+// =======================
+// Mixins
+// =======================
+@mixin container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+@mixin card-base {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(33, 33, 33, 0.06);
+  padding: 16px;
+}
+
+@mixin button-base {
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+// =======================
+// Reset
+// =======================
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.5;
+  color: $text-color;
+  background: $light-bg;
+}
+
+// =======================
+// Layout
+// =======================
+.container {
+  @include container;
+}
+
+// =======================
+// Header
+// =======================
+.site-header {
+  background: $primary-color;
+  color: #fff;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    padding: 12px 0;
+  }
+
+  .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: 600;
+  }
+}
+
+// =======================
+// Hero
+// =======================
+.hero {
+  padding: 40px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    max-width: 720px;
+    margin: 0 auto 16px;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.btn {
+  @include button-base;
+  background: $primary-color;
+  color: #fff;
+
+  &.ghost {
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+  }
+}
+
+// =======================
+// Grid & Cards
+// =======================
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.card {
+  @include card-base;
+
+  h3 {
+    margin-bottom: 8px;
+  }
+}
+
+.link {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+// =======================
+// Updates
+// =======================
+.updates {
+  margin-top: 50px;
+
+  ul {
+    list-style: disc;
+    margin-left: 18px;
+  }
+}
+
+// =======================
+// Footer
+// =======================
+.site-footer {
+  padding: 18px 0;
+  margin-top: 28px;
+  background: transparent;
+  color: $muted-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: $muted-color;
+  }
+}
+
+// =======================
+// Forms
+// =======================
+.contact-form {
+  max-width: 640px;
+  margin-top: 12px;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 6px;
+  }
+}
+
+// =======================
+// Dropdown
+// =======================
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  .dropbtn {
+    background: none;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    a {
+      color: $text-color;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+
+    .dropbtn {
+      text-decoration: underline;
+    }
+  }
+}
+
+// =======================
+// Extras
+// =======================
+.coso {
+  margin-top: 50px;
+}
+
+.scrollspy-example-2 {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+}
+
+.barra {
+  margin: 50px 0 100px 0;
+}
+
+// =======================
+// Carousel
+// =======================
+.carouses {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  .slides {
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite;
+
+    img {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+}
+
+.carousel-imagen {
+  height: 500px;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1050;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+// =======================
+// Materias Section
+// =======================
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  background: $alt-bg;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, $secondary-color, #6dd5fa);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+// Tarjetas Teoría & Práctica
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.teoria h2 {
+  color: $secondary-color;
+}
+
+.practica h2 {
+  color: $accent-color;
+}
+
+// =======================
+// Acordeón
+// =======================
+details {
+  background: #ecf0f1;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  summary {
+    font-weight: bold;
+    outline: none;
+  }
+
+  &[open] {
+    background: #dfe6e9;
+  }
+}
+
+// =======================
+// Archivos
+// =======================
+.archivos {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin: 8px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// =======================
+// Footer
+// =======================
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.9em;
+}
+
+// =======================
+// Responsive
+// =======================
+@media (max-width: 640px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
