@@ -213,7 +213,9 @@ body {
 }
 
 .carousel-imagen {
-  height: 500px;
+  height: auto;
+  width: 100%;
+
 }
 
 .menu {
